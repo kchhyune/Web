@@ -33,7 +33,8 @@ h1 {
   padding-left: 25px;
   border-left: 1px solid gray;
 }
-@media(max-width:980px){
+/*
+@media(max-width:750px){
   #body{
     display: block;
     }
@@ -44,6 +45,19 @@ h1 {
       border-bottom:none;
     }
   }
+  */
+  /* 아이폰 6 세로 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  #body{
+    display: block;
+    }
+  #article{
+    border-left: none;
+    }
+  h1 {
+      border-bottom:none;
+    }
+}
 </style>
 </head>
 <body>
