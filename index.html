@@ -1,66 +1,22 @@
 <!doctype html>
 <html>
-
 <head>
 <title> 강충현의 소소한 일상 </title>
 <meta charset="utf-8">
-<style>
-a{
-  text-decoration: none;
-  color:black;
-}
-body{
-  margin:0;
-}
-h1 {
-  font-size: 45px;
-  text-align:center;
-  border-bottom:1px solid gray;
-  margin:0;
-  padding:20px;
-}
-#body ol{
-  width:100px;
-  height:auto;
-  margin: 0;
-  padding:30px;
-}
-#body{
-  display: grid;
-  grid-template-columns: 160px 1fr;
-}
-#article{
-  padding-left: 25px;
-  border-left: 1px solid gray;
-}
-/*
-@media(max-width:750px){
-  #body{
-    display: block;
-    }
-  #article{
-    border-left: none;
-    }
-  h1 {
-      border-bottom:none;
-    }
-  }
-  */
-  /* 아이폰 6 세로 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
-  #body{
-    display: block;
-    }
-  #article{
-    border-left: none;
-    }
-  h1 {
-      border-bottom:none;
-    }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <input id="night_day" type="button" value="Night" onclick="
+  if(document.querySelector('#night_day').value === 'Night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('#night_day').value = 'Day';
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('#night_day').value = 'Night';
+  }
+  ">
   <h1><a href="index.html">HOME</a></h1>
 <div id="body">
 <div><ol>
