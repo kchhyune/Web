@@ -1,0 +1,59 @@
+<style>
+body{
+  margin:0;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+/*
+a:link {
+    color: blue;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: yellow;
+}
+*/
+a[title="강충현의"] {
+    background-color: yellow;
+}
+h1 {
+  font-size: 45px;
+  text-align:center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+#body ol{
+  width:100px;
+  height:auto;
+  margin: 0;
+  padding:30px;
+}
+#body{
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+#article{
+  padding-left: 25px;
+  border-left: 1px solid gray;
+}
+  /* 아이폰 6 세로 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  #body{
+    display: block;
+    }
+  #article{
+    border-left: none;
+    }
+  h1 {
+      border-bottom:none;
+    }
+}
+</style>
